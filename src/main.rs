@@ -8,13 +8,6 @@ fn main() {
 
 /*
 public static void main(String[] args) {
-    Scanner scanner = new Scanner(System.in);
-    System.out.print("Enter a positive integer: ");
-    int userInput = scanner.nextInt();
-    scanner.close();
-
-    TreeSet<Integer> numbers = generateTreeSet(userInput);
-
     int ceilingRoot = (int) Math.ceil(Math.sqrt(userInput));
     for (int i = 2; i <= ceilingRoot; i++) {
         for (int j = i; j <= userInput; j++) {

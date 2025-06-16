@@ -1,6 +1,6 @@
 # Sieve of Eratosthenes
 
-### Usage
+## Usage
 
 ```sh
 ./run.sh 1000000

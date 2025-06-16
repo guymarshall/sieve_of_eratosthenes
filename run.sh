@@ -6,4 +6,4 @@ gcc -o main main.c -Wall -Werror -O3
 
 mv main target/
 
-./target/main
+./target/main $1

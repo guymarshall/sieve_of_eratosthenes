@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
         return 1;
     }
 
-    int is_prime[limit + 1];
+    int *is_prime = malloc(sizeof(is_prime) * (limit + 1));
 
     for (int i = 0; i <= limit; i++)
     {
@@ -46,6 +46,8 @@ int main(int argc, char *argv[])
     }
 
     printf("Number of primes up to %d: %d\n", limit, prime_count);
+
+    free(is_prime);
 
     return 0;
 }

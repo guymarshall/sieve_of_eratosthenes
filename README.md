@@ -3,5 +3,5 @@
 ## Usage
 
 ```sh
-./run.sh 1000000
+cargo run --release -- 1000000
 ```

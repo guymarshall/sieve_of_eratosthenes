@@ -1,0 +1,10 @@
+[package]
+name = "sieve_of_eratosthenes"
+version = "0.1.0"
+edition = "2024"
+authors = ["Guy Marshall <guymarshall.c@gmail.com>"]
+license = "MIT"
+description = "Count primes up to a given limit"
+
+[dependencies]
+clap = { version = "4.5.40", features = ["derive"] }

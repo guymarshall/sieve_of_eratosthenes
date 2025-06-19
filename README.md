@@ -3,5 +3,5 @@
 ## Usage
 
 ```sh
-cargo run --release -- 1000000
+cargo run --release 100000000
 ```

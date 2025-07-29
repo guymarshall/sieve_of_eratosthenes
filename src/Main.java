@@ -11,33 +11,33 @@ public class Main {
             main(args);
         }
 
-        boolean[] is_prime = new boolean[limit + 1];
+        boolean[] isPrime = new boolean[limit + 1];
         for (int i = 0; i <= limit; i++) {
-            is_prime[i] = true;
+            isPrime[i] = true;
         }
-        is_prime[0] = false;
-        is_prime[1] = false;
+        isPrime[0] = false;
+        isPrime[1] = false;
 
         for (int i = 2; i < limit; i++) {
             if (i * i > limit) {
                 break;
             }
-            if (is_prime[i]) {
+            if (isPrime[i]) {
                 int multiple = i * i;
                 while (multiple <= limit) {
-                    is_prime[multiple] = false;
+                    isPrime[multiple] = false;
                     multiple += i;
                 }
             }
         }
 
-        int prime_count = 0;
+        int primeCount = 0;
         for (int i = 0; i < limit + 1; i++) {
-            if (is_prime[i]) {
-                prime_count++;
+            if (isPrime[i]) {
+                primeCount++;
             }
         }
 
-        System.out.printf("Number of primes up to %d: %d%n", limit, prime_count);
+        System.out.printf("Number of primes up to %d: %d%n", limit, primeCount);
     }
 }
